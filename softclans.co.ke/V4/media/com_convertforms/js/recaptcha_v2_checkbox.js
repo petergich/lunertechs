@@ -1,0 +1,2 @@
+!function(t){"use strict";ConvertForms.Helper.onReady(function(){var e;"object"!=typeof grecaptcha&&0!=(e=t.querySelectorAll(".nr-recaptcha:not([data-recaptcha-widget-id])")).length&&e.forEach(function(e){e.innerHTML=ConvertForms.Helper.text("COM_CONVERTFORMS_RECAPTCHA_NOT_LOADED")})}),t.addEventListener("ConvertFormsAfterSubmit",function(e){var t,e=e.detail.instance.selector.querySelector(".g-recaptcha");e&&(t=e.getAttribute("data-size"),e)&&(e=e.getAttribute("data-recaptcha-widget-id"))&&(grecaptcha.reset(e),"invisible"==t)&&grecaptcha.execute(e)})}((window,document));
+
